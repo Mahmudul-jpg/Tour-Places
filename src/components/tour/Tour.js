@@ -1,5 +1,5 @@
 import React from 'react'
-import './Tour.css'
+import './Tour.scss'
 const Tour = () => {
     return (
         <article className="tour">

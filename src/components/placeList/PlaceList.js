@@ -1,5 +1,5 @@
 import React from 'react'
-import './PlaceList.css'
+import './PlaceList.scss'
 import Tour from '../tour/Tour'
 const PlaceList = () => {
     return (

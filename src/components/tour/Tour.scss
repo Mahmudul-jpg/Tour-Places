@@ -1,5 +1,7 @@
+@import "../../index.scss";
+
 .tour{
-    background: rgb(255, 244, 244);
+    background: $mGrey;
     border-radius: 0.8rem;
     margin: 1rem 0;
 
@@ -18,7 +20,7 @@ image{
     display: block;
     top: 5%;
     right: 5%;
-    color:aqua;
+    color:$mRed;
     font-size: 2rem;
     cursor: pointer;
     transition: all 0.3s linear;
@@ -33,8 +35,8 @@ image{
 }
 .tour-info:h3{
     text-transform:uppercase;
-    color: green;
+    color:$mGreen;
 }
 .tour-info:h4{
-    color:yellowgreen;
+    color:$mSky;
 }
