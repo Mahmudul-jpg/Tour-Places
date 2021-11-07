@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mBlack: #222;
+$mGreen: #82b340;
+$mSky: #4169e1;
+$mGrey: #ececec;
+
+body {
+  background: $mGrey;
+  color: $mBlack;
+  font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,40 @@
+.tour{
+    background: rgb(255, 244, 244);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+
+}
+image{
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    display: block;
+}
+.image-container{
+    position:relative;
+}
+.close-btn{
+    position: absolute;
+    display: block;
+    top: 5%;
+    right: 5%;
+    color:aqua;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.image-container:hover .close-btn{
+    opacity: 1;
+}
+.tour-info{
+    padding: 1rem 0.5rem;
+
+}
+.tour-info:h3{
+    text-transform:uppercase;
+    color: green;
+}
+.tour-info:h4{
+    color:yellowgreen;
+}
