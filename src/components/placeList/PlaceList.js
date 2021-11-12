@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './PlaceList.scss'
 import Tour from '../tour/Tour'
 import TourplaceData from '../TourplaceData'
 const PlaceList = () => {
-    console.log(TourplaceData)
 
+    const [states, setStates] = useState({ tours: TourplaceData })
+    const removeTour = (id) => {
+        const { tours } = states
+        const sortedTours = tours.filter(place => place.id !== id)
+        setStates({
+            tours: sortedTours
+        })
+    }
     return (
         <section class='place-list'>
 
 
             {TourplaceData.map(tour => {
                 return <Tour
-                    key={tour.id} image={tour.image} name={tour.name} city={tour.city} info={tour.info}
+                    key={tour.id} image={tour.image} name={tour.name} city={tour.city} info={tour.info} removeTour={removeTour}
 
                 />
             }

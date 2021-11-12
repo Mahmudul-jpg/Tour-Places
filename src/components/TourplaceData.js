@@ -2,28 +2,28 @@ const TourplaceData = [
     {
         id: 1,
         city: 'banderban',
-        image: '',
+        image: '../images/banderban.jpg',
         name: 'banderban bridge tour',
         info: "shjdshdskjkdskjdkjsk"
     },
     {
         id: 2,
         city: 'sylhet',
-        image: '',
+        image: '../images/syhlet.jpg',
         name: 'syhlet bridge tour',
         info: "shjdshdskjkdskjdkjsk"
     },
     {
         id: 3,
         city: "cox's bazar",
-        image: '',
+        image: '../images/coxBazar.jpg',
         name: 'coxs bazar bridge tour',
         info: "shjdshdskjkdskjdkjsk"
     },
     {
         id: 4,
         city: "sundarban",
-        image: '',
+        image: '../images/sundarban.jpg',
         name: 'sundarban bridge tour',
         info: "shjdshdskjkdskjdkjsk"
     },

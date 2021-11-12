@@ -1,0 +1,15 @@
+@import '../../index.scss';
+.title{
+    text-align: center;
+    color:$mGreen;
+    background-color:$mGrey;
+    height: 100px;
+    padding-top: 20px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {background-color:$mGrey;}
+    to {background-color: $mRed;}
+  }

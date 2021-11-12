@@ -1,9 +1,9 @@
 @import "../../index.scss";
 
 .tour{
-   background: $mRed;
+   background: $mGrey;
     border-radius: 0.8rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     image{
         width: 100%;
         border-top-left-radius: 0.8rem;
@@ -12,6 +12,13 @@
     }
 
 }
+// @media screen and (min-width: 768px) {
+//     .tour {
+//       display: grid;
+//       grid-template-columns: 2fr 3fr;
+//       grid-column-gap: 1rem;
+//     }
+//   }
 
 .image-container{
     position: relative;
@@ -21,11 +28,12 @@
     display: block;
     top: 5%;
     right: 5%;
-    color:$mGreen;
+    color:$mSky;
     font-size: 2rem;
     cursor: pointer;
     transition: all 0.3s linear;
     opacity: 0;
+    z-index: 2000;
 }
 .image-container:hover .close-btn{
     opacity: 1;

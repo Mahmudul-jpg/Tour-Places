@@ -3,3 +3,24 @@
     margin: 0 auto;
     padding: 2rem 0;
 }
+@media screen and (min-width:768px){
+    .place-list{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+}
+@media screen and (min-width:760px){
+    .place-list{
+        width: 85vw;
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+}
+@media screen and (min-width:760px){
+    .place-list{
+        
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+}
