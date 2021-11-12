@@ -5,7 +5,7 @@ import TourplaceData from '../TourplaceData'
 const PlaceList = () => {
 
     const [states, setStates] = useState({ tours: TourplaceData })
-    const removeTour = (id) => {
+    const removeTour = id => {
         const { tours } = states
         const sortedTours = tours.filter(place => place.id !== id)
         setStates({

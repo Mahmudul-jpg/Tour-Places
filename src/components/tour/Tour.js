@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Tour.scss'
-// import { FaChevronCircleDown } from 'react-icon/fa'
+import { FiDelete, FiChevronDown } from 'react-icons/fi'
 const Tour = (props) => {
     const { id, city, image, name, info } = props;
     const { removeTour } = props
@@ -9,26 +9,30 @@ const Tour = (props) => {
         setState({ showInfo: !state.showInfo })
     }
     return (
-        <article className="tour">
-            <div className="image-container">
-                <img width="300px" height="200px"
-                    src={image}
-                    alt=''
-                />
-                <span className="close-btn" onClick={() => { removeTour(id) }}>
-                    <i className="fas fa-window-close " />
 
-                </span>
-            </div>
-            <div className="tour-info">
-                <h2>{city}</h2>
-                <h4>{name}</h4>
-                <h5>info{" "}
-                    <span onClick={handleInfo} > <i className="fas fa-caret-square-down" /></span></h5>
-                {state.showInfo && <p>{info} </p>}
+        <div>
 
-            </div>
-        </article>
+            <article className="tour">
+
+                <div className="image-container">
+                    <img width="300px" height="200px"
+                        src={image}
+                        alt=''
+                    />
+                    <span className="close-btn" onClick={() => { removeTour(id) }}>
+                        <FiDelete />
+                    </span>
+                </div>
+                <div className="tour-info">
+                    <h2>{city}</h2>
+                    <h4>{name}</h4>
+                    <h5>info{" "}
+                        <span onClick={handleInfo} > <FiChevronDown /></span></h5>
+                    {state.showInfo && <p>{info} </p>}
+
+                </div>
+            </article>
+        </div>
     )
 }
 

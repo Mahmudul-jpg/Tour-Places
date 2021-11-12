@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../logo.PNG'
 function Navbar() {
     return (
@@ -10,21 +10,21 @@ function Navbar() {
 
                 <li>
 
-                    <Link to="/" className="nav-link">
+                    <NavLink to="/" className="nav-link">
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
 
-                    <Link to="/tour" className="nav-link ">
+                    <NavLink to="/tour" className="nav-link ">
                         Tours
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
 
-                    <Link to="/about" className="nav-link">
+                    <NavLink to="/about" className="nav-link">
                         About
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </nav>
