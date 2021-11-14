@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './PlaceList.scss'
 import Tour from '../tour/Tour'
 import TourplaceData from '../TourplaceData'
+import { FiSearch } from 'react-icons/fi'
 const PlaceList = () => {
-
+    const [searchItem, setSearchItem] = useState('')
     const [states, setStates] = useState({ tours: TourplaceData })
     const removeTour = id => {
         const { tours } = states
@@ -13,17 +14,26 @@ const PlaceList = () => {
         })
     }
     return (
-        <section class='place-list'>
+        <>
+            <div className="inPut"><input type='search' placeholder='Search place' onChange={(e) => { setSearchItem(e.target.value) }} /><FiSearch /></div>
+            <section class='place-list'>
 
 
-            {TourplaceData.map(tour => {
-                return <Tour
-                    key={tour.id} image={tour.image} name={tour.name} city={tour.city} info={tour.info} removeTour={removeTour}
+                {TourplaceData.filter((val) => {
+                    if (searchItem === '') { return val }
+                    else if (val.name.toLowerCase().includes(searchItem.toLowerCase())) {
+                        return val
+                    }
+                }).map(tour => {
+                    return <Tour
+                        key={tour.id} image={tour.image} name={tour.name} city={tour.city} info={tour.info} removeTour={removeTour}
 
-                />
-            }
-            )}
-        </section>
+                    />
+                }
+                )}
+
+            </section>
+        </>
     )
 }
 

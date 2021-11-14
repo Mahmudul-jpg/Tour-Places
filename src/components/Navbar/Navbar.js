@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 import { NavLink } from 'react-router-dom'
 import logo from '../../logo.PNG'
+
 function Navbar() {
     return (
         <nav className="navbar">
@@ -26,6 +27,7 @@ function Navbar() {
                         About
                     </NavLink>
                 </li>
+
             </ul>
         </nav>
     )

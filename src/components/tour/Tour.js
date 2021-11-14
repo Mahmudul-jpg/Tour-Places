@@ -33,6 +33,7 @@ const Tour = (props) => {
                 </div>
             </article>
         </div>
+
     )
 }
 
